@@ -14,3 +14,8 @@
 3. MELAKUKAN TESTING WEBSITE
 - Setelah saya melakukan testing website (baik untuk tampilan desktop maupun untuk tampilan mobile) ternyata tidak ada masalah yang berarti. Semuanya berjalan dengan normal, artinya website ini sudah responsive di semua perangkat!
 - Website Portal Adminnya juga sudah normal
+
+4. MENYERAHKAN PROGRAM KE #ARPATEAM
+Setelah melakukan testing website, berikutnya saya diperintahkan untuk mengirim hasil program yang saya buat ini ke pihak #ARPATEAM yang nantinya website ini akan di onlinekan.
+
+Website ini dapat diakses di laman https://www.kpsfhuad.com
