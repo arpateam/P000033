@@ -1,0 +1,31 @@
+1. Menganalisis Kebutuhan Halaman Website
+	- Halaman Portal Admin
+	- Halaman Login Portal Admin
+	- Halaman Beranda
+	- Halaman Profil
+		- Sambutan Ketua
+		- Profil KPS
+		- Visi, Misi & Tujuan
+		- Informasi Kepengurusan ORMAWA
+		- Daftar Anggota Aktif
+		- Informasi Program Kerja
+	- Halaman Galeri Kegitan
+		- NMCC
+		- IMCC
+		- PROKER
+	- Halaman Prestasi
+	- Halaman Alumni
+		- Daftar Alumni
+		- Daftar Ketua
+	- Halaman File Download
+2. Menganalisis Fitur Website
+	- Website ini hanya digunakan untuk publikasi ORMAWA UAD
+	- Website ini milik KPS FH UAD
+	- Yang penting bisa menampilkan profil ORMAWA tersebut
+	- Harus ada galeri kegiatannya
+	- Informasi tentang prestasi yang sudah di raih
+	- Informasi tentang alumni dan ketua ORMAWA
+	- Harus ada file download untuk kebutuhan dokumen ORMAWA
+	- Dan dalam mengelola konten tersebut harus bisa di manajemen melalui Portal Admin
+3. Menganalisis Kebutuhan Database
+	- Terlampir pada folder database
