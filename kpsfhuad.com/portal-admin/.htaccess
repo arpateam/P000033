@@ -1,0 +1,155 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteRule ^masuk$ inc/login.php [L]
+RewriteRule ^actionLogin$ inc/act-login.php [L]
+
+RewriteRule ^keluar$ inc/logout.php [L]
+RewriteRule ^keluar-edit$ inc/logout-edit.php [L]
+
+
+RewriteRule ^dashboard$ template.php?module=dashboard [L]
+pr
+
+RewriteRule ^slider$ template.php?module=slider&act=view [L]
+RewriteRule ^tambah-slider$ template.php?module=slider&act=add [L]
+RewriteRule ^ubah-slider-(.*)$ template.php?module=slider&act=edit&kode=$1 [L]
+RewriteRule ^detail-slider-(.*)$ template.php?module=slider&act=detail&kode=$1 [L]
+
+RewriteRule ^actionTambahSlider$ inc/act-slider.php?act=01 [L]
+RewriteRule ^actionEditSlider$ inc/act-slider.php?act=02 [L]
+RewriteRule ^actionDeleteSlider-([0-9]+)$ inc/act-slider.php?act=03&id=$1 [L]
+
+
+RewriteRule ^daftar-ketua$ template.php?module=daftar-ketua&act=view [L]
+RewriteRule ^tambah-daftar-ketua$ template.php?module=daftar-ketua&act=add [L]
+RewriteRule ^ubah-daftar-ketua-(.*)$ template.php?module=daftar-ketua&act=edit&kode=$1 [L]
+RewriteRule ^detail-daftar-ketua-(.*)$ template.php?module=daftar-ketua&act=detail&kode=$1 [L]
+
+RewriteRule ^actionTambahDaftarKetua$ inc/act-daftar-ketua.php?act=01 [L]
+RewriteRule ^actionEditDaftarKetua$ inc/act-daftar-ketua.php?act=02 [L]
+RewriteRule ^actionDeleteDaftarKetua-([0-9]+)$ inc/act-daftar-ketua.php?act=03&id=$1 [L]
+
+
+RewriteRule ^profil$ template.php?module=profil&act=view [L]
+RewriteRule ^tambah-profil$ template.php?module=profil&act=add [L]
+RewriteRule ^ubah-profil-(.*)$ template.php?module=profil&act=edit&kode=$1 [L]
+
+RewriteRule ^actionTambahProfil$ inc/act-profil.php?act=01 [L]
+RewriteRule ^actionEditProfil$ inc/act-profil.php?act=02 [L]
+RewriteRule ^actionDeleteProfil-([0-9]+)$ inc/act-profil.php?act=03&id=$1 [L]
+
+RewriteRule ^actionUploadImgDeskripsiProfil$ inc/act-uploader-images-profil.php [L]
+
+
+RewriteRule ^galeri-kegiatan$ template.php?module=galeri-kegiatan&act=view [L]
+RewriteRule ^tambah-galeri-kegiatan$ template.php?module=galeri-kegiatan&act=add [L]
+RewriteRule ^ubah-galeri-kegiatan-(.*)$ template.php?module=galeri-kegiatan&act=edit&kode=$1 [L]
+RewriteRule ^detail-galeri-kegiatan-(.*)$ template.php?module=galeri-kegiatan&act=detail&kode=$1 [L]
+
+RewriteRule ^actionTambahGaleriKegiatan$ inc/act-galeri-kegiatan.php?act=01 [L]
+RewriteRule ^actionEditGaleriKegiatan$ inc/act-galeri-kegiatan.php?act=02 [L]
+RewriteRule ^actionDeleteGaleriKegiatan-([0-9]+)$ inc/act-galeri-kegiatan.php?act=03&id=$1 [L]
+
+
+RewriteRule ^prestasi$ template.php?module=prestasi&act=view [L]
+RewriteRule ^tambah-prestasi$ template.php?module=prestasi&act=add [L]
+RewriteRule ^ubah-prestasi-(.*)$ template.php?module=prestasi&act=edit&kode=$1 [L]
+
+RewriteRule ^actionTambahPrestasi$ inc/act-prestasi.php?act=01 [L]
+RewriteRule ^actionEditPrestasi$ inc/act-prestasi.php?act=02 [L]
+RewriteRule ^actionDeletePrestasi-([0-9]+)$ inc/act-prestasi.php?act=03&id=$1 [L]
+
+RewriteRule ^actionUploadImgDeskripsiPrestasi$ inc/act-uploader-images-prestasi.php [L]
+
+
+RewriteRule ^berita$ template.php?module=berita&act=view [L]
+RewriteRule ^tambah-berita$ template.php?module=berita&act=add [L]
+RewriteRule ^ubah-berita-(.*)$ template.php?module=berita&act=edit&kode=$1 [L]
+
+RewriteRule ^actionTambahBerita$ inc/act-berita.php?act=01 [L]
+RewriteRule ^actionEditBerita$ inc/act-berita.php?act=02 [L]
+RewriteRule ^actionDeleteBerita-([0-9]+)$ inc/act-berita.php?act=03&id=$1 [L]
+
+RewriteRule ^actionUploadImgDeskripsiBerita$ inc/act-uploader-images-berita.php [L]
+
+
+RewriteRule ^pengumuman$ template.php?module=pengumuman&act=view [L]
+RewriteRule ^tambah-pengumuman$ template.php?module=pengumuman&act=add [L]
+RewriteRule ^ubah-pengumuman-(.*)$ template.php?module=pengumuman&act=edit&kode=$1 [L]
+
+RewriteRule ^actionTambahPengumuman$ inc/act-pengumuman.php?act=01 [L]
+RewriteRule ^actionEditPengumuman$ inc/act-pengumuman.php?act=02 [L]
+RewriteRule ^actionDeletePengumuman-([0-9]+)$ inc/act-pengumuman.php?act=03&id=$1 [L]
+
+RewriteRule ^actionUploadImgDeskripsiPengumuman$ inc/act-uploader-images-pengumuman.php [L]
+
+
+RewriteRule ^alumni$ template.php?module=alumni&act=view [L]
+RewriteRule ^tambah-alumni$ template.php?module=alumni&act=add [L]
+RewriteRule ^ubah-alumni-(.*)$ template.php?module=alumni&act=edit&kode=$1 [L]
+
+RewriteRule ^actionTambahAlumni$ inc/act-alumni.php?act=01 [L]
+RewriteRule ^actionEditAlumni$ inc/act-alumni.php?act=02 [L]
+RewriteRule ^actionDeleteAlumni-([0-9]+)$ inc/act-alumni.php?act=03&id=$1 [L]
+
+RewriteRule ^actionUploadImgDeskripsiAlumni$ inc/act-uploader-images-alumni.php [L]
+
+
+RewriteRule ^file-download$ template.php?module=file-download&act=view [L]
+RewriteRule ^tambah-file-download$ template.php?module=file-download&act=add [L]
+RewriteRule ^ubah-file-download-(.*)$ template.php?module=file-download&act=edit&kode=$1 [L]
+RewriteRule ^detail-file-download-(.*)$ template.php?module=file-download&act=detail&kode=$1 [L]
+
+RewriteRule ^actionTambahFileDownload$ inc/act-file-download.php?act=01 [L]
+RewriteRule ^actionEditFileDownload$ inc/act-file-download.php?act=02 [L]
+RewriteRule ^actionDeleteFileDownload-([0-9]+)$ inc/act-file-download.php?act=03&id=$1 [L]
+
+
+RewriteRule ^data-admin$ template.php?module=data-admin&act=view [L]
+RewriteRule ^tambah-data-admin$ template.php?module=data-admin&act=add [L]
+RewriteRule ^ubah-password-data-admin-(.*)$ template.php?module=data-admin&act=ubah-password&kode=$1 [L]
+
+RewriteRule ^actionAddDataAdmin$ inc/act-admin-data.php?act=01 [L]
+RewriteRule ^actionEditDataAdmin$ inc/act-admin-data.php?act=02 [L]
+RewriteRule ^actionEditPasswordDataAdmin$ inc/act-admin-data.php?act=03 [L]
+
+
+RewriteRule ^pengaturan$ template.php?module=pengaturan&act=view [L]
+RewriteRule ^edit-pengaturan-([0-9]+)$ template.php?module=pengaturan&act=edit&id=$1 [L]
+RewriteRule ^video-beranda$ template.php?module=pengaturan&act=video-beranda [L]
+RewriteRule ^ubah-video-beranda$ template.php?module=pengaturan&act=ubah-video-beranda [L]
+
+RewriteRule ^actionEditPengaturan$ inc/act-settings.php?act=01 [L]
+RewriteRule ^actionVideoBeranda$ inc/act-uploader-parallax-video.php [L]
+
+
+RewriteRule ^halaman$ template.php?module=halaman&act=view [L]
+RewriteRule ^edit-halaman-([0-9]+)$ template.php?module=halaman&act=edit&id=$1 [L]
+
+RewriteRule ^actionEditHalaman$ inc/act-pages.php?act=01 [L]
+
+RewriteRule ^actionUploadImgDeskripsiHalaman$ inc/act-uploader-images-halaman.php [L]
+
+
+RewriteRule ^blog$ template.php?module=blog&act=view [L]
+RewriteRule ^tambah-blog$ template.php?module=blog&act=add [L]
+RewriteRule ^ubah-blog-(.*)$ template.php?module=blog&act=edit&kode=$1 [L]
+
+RewriteRule ^actionTambahBlog$ inc/act-blog.php?act=01 [L]
+RewriteRule ^actionEditBlog$ inc/act-blog.php?act=02 [L]
+RewriteRule ^actionDeleteBlog-([0-9]+)$ inc/act-blog.php?act=03&id=$1 [L]
+
+RewriteRule ^actionUploadImgDeskripsiBlog$ inc/act-uploader-images-blog.php [L]
+
+
+RewriteRule ^sitemap-one$ template.php?module=sitemap-one&act=view [L]
+RewriteRule ^tambah-sitemap-one$ template.php?module=sitemap-one&act=add [L]
+RewriteRule ^edit-sitemap-one-([0-9]+)$ template.php?module=sitemap-one&act=edit&id=$1 [L]
+
+RewriteRule ^404$ inc/404.php [L]
+
+ErrorDocument 404 https://www.kpsfhuad.com/404.html
+ErrorDocument 500 https://www.kpsfhuad.com/404.html
+ErrorDocument 503 https://www.kpsfhuad.com/404.html
