@@ -10,3 +10,7 @@
 - Refresh ingatan tentang HTML5 https://www.youtube.com/playlist?list=PLFIM0718LjIX-K5eeHRImnZhPUMhsw9A7
 - Refresh ingatan tentang CSS3 https://www.youtube.com/playlist?list=PLFIM0718LjIVCmrSWbZPKCccCkfFw-Naa
 - Refresh ingatan tengan Framework CSS & Beberapa plugins/libraries https://www.youtube.com/playlist?list=PLFIM0718LjIV46XyERoDIlBWl2tMmmm8X
+
+3. MELAKUKAN TESTING WEBSITE
+- Setelah saya melakukan testing website (baik untuk tampilan desktop maupun untuk tampilan mobile) ternyata tidak ada masalah yang berarti. Semuanya berjalan dengan normal, artinya website ini sudah responsive di semua perangkat!
+- Website Portal Adminnya juga sudah normal
