@@ -1,0 +1,12 @@
+RewriteEngine On
+
+RewriteRule ^semua-kegiatan.html$ template.php?module=galeri-kegiatan&id=3 [L]
+RewriteRule ^nmcc.html$ template.php?module=nmcc&id=3 [L]
+RewriteRule ^imcc.html$ template.php?module=imcc&id=3 [L]
+RewriteRule ^proker.html$ template.php?module=proker&id=3 [L]
+
+RewriteRule ^(.*).html$ template.php?module=read-galeri-kegiatan&judul_seo=$1&seo=$2 [L]
+
+ErrorDocument 404 https://www.kpsfhuad.com/404.html
+ErrorDocument 500 https://www.kpsfhuad.com/404.html
+ErrorDocument 503 https://www.kpsfhuad.com/404.html

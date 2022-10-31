@@ -1,0 +1,7 @@
+RewriteEngine On
+
+RewriteRule ^$ template.php?module=alumni&id=5 [L]
+
+ErrorDocument 404 https://www.kpsfhuad.com/404.html
+ErrorDocument 500 https://www.kpsfhuad.com/404.html
+ErrorDocument 503 https://www.kpsfhuad.com/404.html

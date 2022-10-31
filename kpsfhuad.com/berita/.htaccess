@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteRule ^$ template.php?module=berita&id=9 [L]
+RewriteRule ^page-([0-9]+)$ template.php?module=berita&id=9&page=$1 [L]
+RewriteRule ^(.*).html$ template.php?module=read-berita&judul_seo=$1&seo=$2 [L]
+
+ErrorDocument 404 https://www.kpsfhuad.com/404.html
+ErrorDocument 500 https://www.kpsfhuad.com/404.html
+ErrorDocument 503 https://www.kpsfhuad.com/404.html

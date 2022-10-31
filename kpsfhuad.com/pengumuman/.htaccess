@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteRule ^$ template.php?module=pengumuman&id=10 [L]
+RewriteRule ^page-([0-9]+)$ template.php?module=pengumuman&id=10&page=$1 [L]
+RewriteRule ^(.*).html$ template.php?module=read-pengumuman&judul_seo=$1&seo=$2 [L]
+
+ErrorDocument 404 https://www.kpsfhuad.com/404.html
+ErrorDocument 500 https://www.kpsfhuad.com/404.html
+ErrorDocument 503 https://www.kpsfhuad.com/404.html
